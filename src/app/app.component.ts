@@ -11,10 +11,10 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     console.log('jQuery version', jQuery.fn.jquery);
-    console.log('Is the title empty?', this.isEmpty(this.title));
+    console.log('Is the title empty?', this.isEmptyValue(this.title));
   }
 
-  private isEmpty(value: any): boolean {
+  private isEmptyValue(value: any): boolean {
     return isEmpty(value);
   }
 }
