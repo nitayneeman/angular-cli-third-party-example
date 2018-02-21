@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { isEmpty } from 'lodash';
+import isEmpty from 'lodash-es/isEmpty';
 
 @Component({
   selector: 'app-root',
