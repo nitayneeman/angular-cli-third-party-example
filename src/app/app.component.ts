@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as _ from 'lodash';
+import { isEmpty } from 'lodash';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +15,6 @@ export class AppComponent implements OnInit {
   }
 
   private isEmpty(value: any): boolean {
-    return _.isEmpty(value);
+    return isEmpty(value);
   }
 }
